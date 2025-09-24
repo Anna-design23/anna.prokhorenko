@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+   <div class="survey-container">
+<h2>🏋️ Gym Quality Survey</h2>
+<form id="surveyForm">
+<label for="name">Your Name (optional)</label>
+<input type="text" id="name" name="name">
+
+
+<label>How do you rate our gym?</label>
+<div class="stars" id="starRating">
+<span class="star" data-value="1">★</span>
+<span class="star" data-value="2">★</span>
+<span class="star" data-value="3">★</span>
+<span class="star" data-value="4">★</span>
+<span class="star" data-value="5">★</span>
+</div>
+<input type="hidden" id="rating" name="rating" required>
+
+
+<label for="equipment">Are you satisfied with the equipment?</label>
+<select id="equipment" name="equipment" required>
+<option value="">--Select--</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+
+<label for="staff">How would you rate our staff?</label>
+<select id="staff" name="staff" required>
+<option value="">--Select--</option>
+<option value="Excellent">Excellent</option>
+<option value="Good">Good</option>
+<option value="Average">Average</option>
+<option value="Poor">Poor</option>
+</select>
+
+
+<label for="feedback">Additional Feedback</label>
+<textarea id="feedback" name="feedback"></textarea>
+
+
+<button type="submit">Submit Survey</button>
+</form>
+<div class="thank-you">✅ Thank you for your feedback!</div>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
